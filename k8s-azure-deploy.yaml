@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: celikan
-        image: dockerdepo.azurecr.io/boraaaydin/celikanmuhendislik:#{Build.BuildId}#
+        image: dockerdepo.azurecr.io/semraydin/celikanmuhendislik:#{Build.BuildId}#
         imagePullPolicy: Always
         env:
         - name: VERSION
