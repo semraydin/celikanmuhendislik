@@ -1,15 +1,11 @@
-/* Normal desktop :1200px. */
-$large_device:'(min-width: 1200px) and (max-width: 1500px)';
+$breakpoint-xl: 'only screen and (min-width:1200px)';
 
-/* Normal desktop :992px. */
-$mid_device:'(min-width: 992px) and (max-width: 1200px)';
+$breakpoint-lg: 'only screen and (min-width:992px) and (max-width:1199px)';
 
-/* Tablet desktop :768px. */
-$tablet_device:'(min-width: 768px) and (max-width: 991px)';
+$breakpoint-md: 'only screen and (min-width:768px) and (max-width:991px)';
 
-/* small mobile :320px. */
-$mobile_device:'(max-width: 767px)';
+$breakpoint-sm: 'only screen and (min-width:576px) and (max-width:767px)';
 
-/* Large Mobile :480px. */
-$large_mobile:'only screen and (min-width: 480px) and (max-width: 767px)';
+$breakpoint-xs: 'only screen and (max-width:767px)';
 
+$breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767px)';
