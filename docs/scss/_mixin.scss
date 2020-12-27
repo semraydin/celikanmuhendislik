@@ -3,6 +3,11 @@
     transition-duration: $time;
 }
 
+@mixin transition($value) {
+    -webkit-transition: $value;
+    transition: $value;
+}
+
 @mixin transform($value) {
     -webkit-transform: $value;
     transform: $value;
@@ -13,28 +18,7 @@
     animation: $value;
 }
 
-@mixin flex-direction-column($value) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: $value;
-    flex-direction: $value;
-}
-
-@mixin flex-direction-column-reverse($value) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: $value;
-    flex-direction: $value;
-}
-
-@mixin flex-direction-row($value) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: $value;
-    flex-direction: $value;
-}
-
-@mixin flex-direction-row-reverse($value) {
+@mixin flex-direction($value) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -ms-flex-direction: $value;
@@ -54,16 +38,22 @@
     display: $value;
 }
 
-@mixin justify-content-between($value) {
+@mixin justify-content-between {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: $value;
+    justify-content: space-between;
 }
 
-@mixin justify-content-center($value) {
-    -webkit-box-pack: $value;
-    -ms-flex-pack: $value;
-    justify-content: $value;
+@mixin justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin justify-content-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 @mixin flex($value) {
@@ -74,5 +64,5 @@
 
 @mixin flex-wrap($value) {
     -ms-flex-wrap: $value;
-      flex-wrap: $value;
+    flex-wrap: $value;
 }
